@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="weather_checker_app">Weather Checker App</string>
+    <string name="enter_a_city_name">Enter a city Name</string>
+</resources>

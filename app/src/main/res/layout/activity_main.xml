@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/weather_checker_app"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TextView"
+        app:srcCompat="@drawable/back"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_below="@+id/TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_a_city_name" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_below="@id/City"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@android:color/white"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Check Weather"
+        android:onClick="showWeather"/>
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Wind"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Weather"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:text="TextView" />
+
+
+</android.widget.RelativeLayout>
